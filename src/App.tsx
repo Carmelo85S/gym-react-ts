@@ -1,10 +1,10 @@
+import Navbar from "@/components/navbar"
 function App() {
 
   return (
     <>
-      <main className="app">
-        App
-
+      <main className="app bg-gray-20">
+        <Navbar />
       </main>
     </>
   )
