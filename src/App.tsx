@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar"
+import Home from "@/components/home"
 import { useEffect, useState } from "react"
 import { SelectedPage } from "@/shared/types"
 
@@ -28,7 +29,11 @@ function App() {
         <Navbar 
           isTopOfPage = {isTopOfPage}
           selectedPage = {selectedPage}
-          setSelectedPage = {setSelectedPage}/>
+          setSelectedPage = {setSelectedPage}
+        />
+
+        <Home 
+        setSelectedPage = {setSelectedPage}/>
       </main>
     </>
   )
