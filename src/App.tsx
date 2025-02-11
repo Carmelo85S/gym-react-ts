@@ -1,5 +1,5 @@
 import Navbar from "@/components/navbar"
-import Home from "@/components/home"
+import Home from "@/components/home";
 import { useEffect, useState } from "react"
 import { SelectedPage } from "@/shared/types"
 
