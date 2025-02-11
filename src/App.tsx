@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar"
 import Home from "@/components/home";
+import Benefits from "@/components/benefits";
 import { useEffect, useState } from "react"
 import { SelectedPage } from "@/shared/types"
 
@@ -7,7 +8,6 @@ function App() {
 
   const[selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +33,12 @@ function App() {
         />
 
         <Home 
-        setSelectedPage = {setSelectedPage}/>
+        setSelectedPage = {setSelectedPage}
+        />
+
+        <Benefits 
+          setSelectedPage = {setSelectedPage}
+        />
       </main>
     </>
   )
