@@ -12,16 +12,15 @@ type Props = {
     setSelectedPage: (value:SelectedPage) => void;
 }
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
+const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
 
     const flexBetween = "flex items-center justify-between";
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false)
     const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)")
-    const navbarBackground = isTopOfPage ? "" : "bg-primary-100 dropshadow"
 
     return (
         <nav
-            className={`${navbarBackground} ${flexBetween} fixed py-4 top-0 z-40 w-full`}>
+            className={`${flexBetween} fixed py-4 top-0 z-40 w-full bg-primary-100 transition-all duration-300`}>
             <section className={`${flexBetween} mx-auto w-5/6`}>
 
                 <section className={`${flexBetween} w-full gap-16`}>
