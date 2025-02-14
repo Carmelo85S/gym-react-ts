@@ -34,22 +34,26 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
                                 <Link 
                                     page="Home"
                                     selectedPage={selectedPage}
-                                    setSelectedPage={setSelectedPage} 
+                                    setSelectedPage={setSelectedPage}
+                                    setIsMenuToggled={setIsMenuToggled}
                                 />
                                 <Link 
                                     page="Benefits"
                                     selectedPage={selectedPage}
-                                    setSelectedPage={setSelectedPage} 
+                                    setSelectedPage={setSelectedPage}
+                                    setIsMenuToggled={setIsMenuToggled} 
                                 />
                                 <Link 
                                     page="Classes"
                                     selectedPage={selectedPage}
-                                    setSelectedPage={setSelectedPage} 
+                                    setSelectedPage={setSelectedPage}
+                                    setIsMenuToggled={setIsMenuToggled} 
                                 />
                                 <Link 
                                     page="Contact us"
                                     selectedPage={selectedPage}
                                     setSelectedPage={setSelectedPage} 
+                                    setIsMenuToggled={setIsMenuToggled}
                                 />
                             </div>
                             <div className={`${flexBetween} ml-auto gap-8`}>
@@ -80,27 +84,31 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
 
                         {/*MENU ITEMS*/ }
                         <div className="ml-[33%] flex flex-col mt-10 gap-10 text-2xl">
-                                <Link 
-                                    page="Home"
-                                    selectedPage={selectedPage}
-                                    setSelectedPage={setSelectedPage} 
-                                />
-                                <Link 
-                                    page="Benefits"
-                                    selectedPage={selectedPage}
-                                    setSelectedPage={setSelectedPage} 
-                                />
-                                <Link 
-                                    page="Classes"
-                                    selectedPage={selectedPage}
-                                    setSelectedPage={setSelectedPage} 
-                                />
-                                <Link 
-                                    page="Contact us"
-                                    selectedPage={selectedPage}
-                                    setSelectedPage={setSelectedPage} 
-                                />
-                            </div>
+                            <Link 
+                                page="Home"
+                                selectedPage={selectedPage}
+                                setSelectedPage={setSelectedPage} 
+                                setIsMenuToggled={setIsMenuToggled}
+                            />
+                            <Link 
+                                page="Benefits"
+                                selectedPage={selectedPage}
+                                setSelectedPage={setSelectedPage} 
+                                setIsMenuToggled={setIsMenuToggled}
+                            />
+                            <Link 
+                                page="Classes"
+                                selectedPage={selectedPage}
+                                setSelectedPage={setSelectedPage} 
+                                setIsMenuToggled={setIsMenuToggled}
+                            />
+                            <Link 
+                                page="Contact us"
+                                selectedPage={selectedPage}
+                                setSelectedPage={setSelectedPage} 
+                                setIsMenuToggled={setIsMenuToggled}
+                            />
+                        </div>
                     </div>
                 </div>
             )}

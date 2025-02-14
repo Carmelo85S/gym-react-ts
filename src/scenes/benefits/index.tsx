@@ -73,7 +73,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 className="md:flex items-center justify-between gap-8 mt-5"
                 initial = "hidden"
                 whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
+                viewport={{once: true, amount: 0.2}}
                 variants={container}
             >
             {benefits.map((benefit: BenefitType) => (
