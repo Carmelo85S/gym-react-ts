@@ -12,7 +12,7 @@
         "gray-100": "#DFCCCC",
         "gray-500": "#5E0000",
         "primary-100": "#FFE1E0",
-        "primary-300": "#FFA6A3",
+        "primary-300": "#FF00A4",
         "primary-500": "#FF6B66",
         "secondary-400": "#FFCD5B",
         "secondary-500": "#FFC132",
